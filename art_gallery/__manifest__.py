@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Galeria de Arte",
+    'name': "Galeria de Arte!!",
 
     'summary': """
         Mostrar Obras de Arte""",
