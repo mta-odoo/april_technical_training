@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="art_1" model="art.work">
+            <field name="name">Starry Night</field>
+            <field name="frame">gold</field>
+        </record>
+
+        <record id="art_2" model="art.work">
+            <field name="name">Guernica</field>
+            <field name="frame">black</field>
+        </record>
+    </data>
+</odoo>
