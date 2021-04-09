@@ -18,6 +18,15 @@
                                 <field name="width"/>
                                 <field name="frame"/>
                             </group>
+                            <notebook>
+                                <page string="Ownership Details">
+                                    <group>
+                                        <field name="for_sale"/>
+                                        <field name="owner_name"/>
+                                        <field name="public_message"/>
+                                    </group>
+                                </page>
+                            </notebook>
                         </group>
                     </sheet>
                 </form>
@@ -34,6 +43,7 @@
                     <field name="length"/>
                     <field name="width"/>
                     <field name="frame"/>
+                    <field name="finished_date"/>
                 </tree>
             </field>
         </record>
