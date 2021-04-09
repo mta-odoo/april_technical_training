@@ -23,6 +23,11 @@
 
     # always loaded
     'data': [
+        'security/art_security.xml',
+        'security/ir.model.access.csv',
+        'views/gallery_menuitems.xml',
+        'views/gallery_views.xml',
+        'data/art_data.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

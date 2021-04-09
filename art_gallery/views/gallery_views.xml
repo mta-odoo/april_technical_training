@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="art_work_form_view">
+            <field name="name">art.work.form.view</field>
+            <field name="model">art.work</field>
+            <field name="arch" type="xml">
+                <form string="Art Work Form">
+                    <sheet>
+                        <h1><field name="name"/></h1>
+                        <group name="art_info">
+                            <group>
+                                <field name="finished_date"/>
+                                <field name="active"/>
+                            </group>
+                            <group>
+                                <field name="length"/>
+                                <field name="width"/>
+                                <field name="frame"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="art_work_tree_view">
+            <field name="name">art.work.tree.view</field>
+            <field name="model">art.work</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <button string="Details" groups="art_gallery.group_gallery_admin"/>
+                    <field name="name"/>
+                    <field name="length"/>
+                    <field name="width"/>
+                    <field name="frame"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
