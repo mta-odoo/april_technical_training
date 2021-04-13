@@ -10,6 +10,8 @@
                         <h1><field name="name"/></h1>
                         <group name="art_info">
                             <group>
+                                <field name="author_id"/>
+                                <field name="donations_ids" widget='many2many_tags'/>
                                 <field name="finished_date"/>
                                 <field name="active"/>
                             </group>
@@ -24,6 +26,11 @@
                                         <field name="for_sale"/>
                                         <field name="owner_name"/>
                                         <field name="public_message"/>
+                                    </group>
+                                </page>
+                                <page string="Themes">
+                                    <group>
+                                        <field name="theme_ids"/>
                                     </group>
                                 </page>
                             </notebook>

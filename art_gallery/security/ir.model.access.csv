@@ -2,3 +2,5 @@ id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 admin_art,admin art,art_gallery.model_art_work,group_gallery_admin,1,1,1,1
 user_art,user art,art_gallery.model_art_work,group_gallery_user,1,1,0,0
 all_art,all art,art_gallery.model_art_work,,1,0,0,0
+admin_art_theme,admin art theme,art_gallery.model_art_work_theme,group_gallery_admin,1,1,1,1
+all_art_theme,all art theme,art_gallery.model_art_work_theme,,1,0,0,0
