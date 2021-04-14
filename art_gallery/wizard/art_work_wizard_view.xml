@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="gallery_partner_wizard_form_view">
+            <field name="name">gallery.partner.wizard.form</field>
+            <field name="model">gallery.partner.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Select Donors">
+                    <group>
+                        <field name="artwork_id"/>
+                        <field name="donors"/>
+                    </group>
+                    <footer>
+                        <button name="set_donors" type="object" string="Save"/>
+                        <button special="cancel" string="Cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+ 
+        <act_window id="launch_partner_wizard"
+                    name="Set Donors"
+                    binding_model="art.work"
+                    res_model="gallery.partner.wizard"
+                    view_mode="form"
+                    target="new"/>
+                    
+    </data>
+</odoo>
