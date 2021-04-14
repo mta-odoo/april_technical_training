@@ -27,7 +27,9 @@
         'security/ir.model.access.csv',
         'views/gallery_menuitems.xml',
         'views/gallery_views.xml',
+        'views/res_partner_views.xml',
         'data/art_data.xml',
+        'wizard/art_work_wizard_view.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
