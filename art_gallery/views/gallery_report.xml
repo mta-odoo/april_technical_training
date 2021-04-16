@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_gallery">
+            <t t-call="web.html_container">
+                 <t t-call="web.external_layout">
+                     <t t-foreach="docs" t-as="doc">
+                        <div class="page">
+                            <h2 t-field="doc.name"/>
+                            <p>Frame: <span t-field="doc.frame"/></p>
+                            <p>Length: <span t-field="doc.length"/></p>
+                            <p>Width: <span t-field="doc.width"/></p>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+        
+        <report
+                id="report_gallery"
+                model="art.work"
+                string="Gallery Report"
+                name="art_gallery.report_gallery"
+                file="art_gallery.report_gallery"
+                report_type="qweb-pdf"/>
+
+
+    </data>
+</odoo>

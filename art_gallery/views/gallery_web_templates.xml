@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <template id="artworks_website">
+            <t t-call="website.layout">
+                <t t-set="title">Art Works</t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <h1>Art Works</h1>
+                        <t t-foreach="artworks" t-as="artwork">
+                            <h2>
+                                <t t-esc="artwork.name"/>
+                            </h2>
+                            <h4>Properties:</h4>
+                            <ul>
+                                <li t-esc="artwork.length"/>
+                                <li t-esc="artwork.width"/>
+                                <li t-esc="artwork.frame"/>
+                                <li t-esc="artwork.finished_date"/>
+                            </ul>
+                            Donate to 
+                            <a t-attf-href="/gallery/{{slug(artwork)}}">
+                                <t t-esc="artwork.name"/>
+                            </a>
+                        </t>
+                    </div>                   
+                </div>
+            </t>
+        </template>
+                  
+    </data>
+</odoo>
