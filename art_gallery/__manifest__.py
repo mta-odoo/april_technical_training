@@ -19,7 +19,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base', 'website'],
 
     # always loaded
     'data': [
@@ -28,8 +28,10 @@
         'views/gallery_menuitems.xml',
         'views/gallery_views.xml',
         'views/res_partner_views.xml',
+        'views/gallery_web_templates.xml',
         'data/art_data.xml',
-        'wizard/art_work_wizard_view.xml'
+        'wizard/art_work_wizard_view.xml',
+        'views/gallery_report.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
